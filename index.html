@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    
+<div class="container">
+  <h2 class="text-center">Determine Equilibrium Mass Calculator</h2>  
+  <div class="line_breaker"></div>
+  <div class="row" id="info_box_container">  
+    <div class="card first_card info_box">
+      <img class="card-img-top" src="img/balloon.jpg">
+      <div class="card-body">
+        <h5 class="card-title text-center">Helium Balloon</h5>
+      </div>
+    </div>
+      
+    <div class="info_box">
+        <h5>How This Calculator Works</h5>
+        <p>This calculator computes the equilibrium value.  The equilibrium is the amount of mass needed to make the balloon
+        neither float or sink.  The calculator makes the following assumptions</p>
+        <ul>
+          <li>The density of helium is 0.179kg/m<sup>3</sup></li>
+          <li>The density of air is 1.225kg/m<sup>3</sup></li>
+          <li>The acceleration due to gravity is 9.8m/s<sup>2</sup></li>
+          <li>The balloons are treated as spheres when determining volume.</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="panel panel-success">
+        <div class="panel-body">
+          <div class="inner_panel_divs">
+            <h5 class="text-center">Mass of the Balloon</h5>
+          </div>
+          <div class="inner_panel_divs">
+            <div class="center_the_div units">
+              <label>Mass: </label>
+              <input type="text" size="8" id="massTextBox"/> <label id="units_mass"></label>
+            </div>
+          </div>
+          
+          <div class="inner_panel_divs hidden" id="errorMassDiv">
+            Be sure to click grams or kilograms and you have a valid number
+          </div>
+          
+          <div class="inner_panel_divs" id="massDiv">
+            <div id="gram" class="measure"> grams </div>
+            <div id="kilogram" class="measure"> kilograms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="panel panel-success">
+        <div class="panel-body">
+          <div class="inner_panel_divs">
+            <h5 class="text-center">Radius of the Balloon</h5>
+          </div>
+          <div class="inner_panel_divs">
+            <div class="center_the_div units">
+              <label>Radius: </label>
+              <input type="text" size="8" id="radiusTextBox" />
+              <p id="units_distance"></p>
+            </div>
+          </div>
+          
+          <div class="inner_panel_divs hidden" id="errorMeasurementDiv">
+            Be sure to click centimeters or meters and you have a valid number
+          </div>
+          
+          <div class="inner_panel_divs" id="measureDiv">
+            <div id="centimeter" class="measure"> centimeters </div>
+            <div id="meter" class="measure"> meters</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md">
+      <div id="calcDiv">
+        <div class="calcDiv_boxes">
+          <h3 class="text-center">Calculate Equilibrium</h3>
+        </div>
+        <div class="calcDiv_boxes">
+          <div>
+            <button type="button" class="btn btn-primary btn-lg flex-center" id="calcBtn">Calculate</button>
+          </div>
+        </div>
+        <div class="calcDiv_boxes">
+          <div id="resultDiv">
+            Results...
+          </div>
+        </div>
+        <div class="calcDiv_boxes">
+          <div id="explanationDiv">
+            Explanation
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <!--  My custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    
+</body>
+</html>
